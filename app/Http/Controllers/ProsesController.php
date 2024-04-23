@@ -54,11 +54,11 @@ class ProsesController extends Controller
                 $hasil = 'Error: Pembagian oleh nol tidak diizinkan';   
             }
         }else{ 
-            return view('kalkulator.index');
+            return view('kalkulator2.index2');
            }   
  
 
-  return view('kalkulator.hasil',compact('hasil'));
+  return view('kalkulator2.hasil',compact('hasil'));
     
     }
     /**

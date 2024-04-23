@@ -1,14 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fiza</title>
+</head>
+<body>
 <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
-                    <div class="row">
-        <div class="col-md-6">
-           
-        </div>
-        <div class="row">
-        <div class="col-md-6">
+            <center><h3><a href="{{ url('/kalkulator1') }}">kalkulator 1</a></h3></center>
+
         <style>
     h1 {
   text-align: center;
@@ -21,26 +25,23 @@ body {
  }
 form {
   width: 400px;
-  margin: 0 auto; /* Center the form horizontally */
+  margin: 0 auto;
   padding: 20px;
   border: 1px solid black;
   border-radius: 8px;
-  background-color: #9195F6;
+  background-color:	#CD5C5C;
 }
 input[type="submit"] {
   padding: 10px 20px;
-  background-color: #0D9276;
+  background-color: #778899;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
 }
  </style>
-           
-        </div>
-    </div>
                     <center>
-                        <h1>Kalkulator sederhana</h1>
+                        <h1>Kalkulator 2</h1>
                         <div class="calculator">
                             <form action="{{route('hitung.store')}}" method="post">
                                 @csrf
@@ -54,9 +55,6 @@ input[type="submit"] {
                                  <td colspan=2><input type="number" name="angka2" id=""><br></td>
                                  </tr>
                                  <tr>
-                            <td colspan=4>Hasil:{{$hasil}}</td>
-                           </tr>
-                                 <tr>
                                     <td><input type="submit" value="+" name="op"></td>
                                     <td><input type="submit" value="-" name="op"></td>
                                     <td><input type="submit" value="*" name="op"></td>
@@ -64,11 +62,11 @@ input[type="submit"] {
                                  </tr>
                             <br>
                             <td colspan=4>
-                                Nama: Afiza Ananta <br>
+                            Nama: Afiza Ananta <br>
                                 Kelas :XII RPL
 
                             </form>
-
+                           
                             </td>
                             </table>
                         </div>
@@ -80,3 +78,5 @@ input[type="submit"] {
     </div>
 
    
+</body>
+</html>

@@ -15,8 +15,9 @@ use App\Http\Controllers\ContenController;
 */
 
 Route::get('/', function () {
-    return view('kalkulator.index');
+    return view('kalkulator2.index2');
 });
 Route::resource('hitung',ProsesController::class,);
-Route::get('/kalkulator',[ContenController::class,'kalkulator2']);
+Route::get('/kalkulator1',[ContenController::class,'kalkulator1']);
+Route::get('/kalkulator2',[ContenController::class,'kalkulator2']);
 
