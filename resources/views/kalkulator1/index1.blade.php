@@ -87,13 +87,12 @@
             </tr>  
             <tr>  
                 <td><input type="button" value="0" onClick="calc.display.value+='0'"></td> 
-                <td><input type="button" value="00" onClick="calc.display.value+='00'"></td> 
                 <td> <input type="button" class="operator" name="equal"value="=" onClick="calc.display.value =eval(calc.display.value)"></td>
                 <td> <input type="button" class="operator" name = "div"value="/" onClick="calc.display.value+='/'"> </td>
-                   
+                <td> <input type="button" id="clear" name="clear" value="c" onClick="calc.display.value=''"></td> 
             </tr>
             <tr>
-            <td> <input type="button" id="clear" name="clear" value="c" onClick="calc.display.value=''"></td> 
+            
            
                           
                             <td colspan=4>
